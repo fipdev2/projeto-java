@@ -18,8 +18,9 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@Entity(name = "Questions")
+@Entity(name = "questions")
 public class QuestionEntity {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
@@ -31,6 +32,8 @@ public class QuestionEntity {
     @JoinColumn(name = "question_id")
     private List<AlternativesEntity> alternatives;
 
+    private String description;
+    
     @CreationTimestamp
     private LocalDateTime createdAt;
 }

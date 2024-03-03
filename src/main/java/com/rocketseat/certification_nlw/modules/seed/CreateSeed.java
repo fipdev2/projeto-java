@@ -20,7 +20,7 @@ public class CreateSeed {
     public static void main(String[] args) {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://localhost:5453/pg_nlw");
+        dataSource.setUrl("jdbc:postgresql://localhost:5434/pg_nlw");
         dataSource.setUsername("admin");
         dataSource.setPassword("admin");
 
@@ -36,6 +36,7 @@ public class CreateSeed {
         try {
             String sqlScript = new String(Files.readAllBytes(Paths.get(filePath)));
             jdbcTemplate.execute(sqlScript);
+            System.err.println("Seed realizado com sucesso");
         } catch (IOException e) {
             System.err.println("Erro ao executar arquivo " + e.getMessage());
         }

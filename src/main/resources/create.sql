@@ -1,4 +1,4 @@
-INSERT INTO question (id, description, technology) VALUES
+INSERT INTO questions (id, description, technology) VALUES
 ('a4ca54d1-3491-4382-8a78-129f3170b9b6', 'Como criar uma classe em Java?', 'Java'),
 ('29f74178-e7c5-450c-baea-a707a5d5d309', 'Explique o conceito de polimorfismo em Java', 'Java'),
 ('5dcaad09-b9d2-45c3-9107-84d2227d21dc', 'Como lidar com exceções em Java?', 'Java');

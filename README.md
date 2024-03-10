@@ -43,7 +43,7 @@ To use the Student Certification Grade Calculator:
 App has 4 main routes endpoints
 - GET http://localhost:8081/questions/technology/{technologyName}
 - POST http://localhost:8081/students/verifyIfHasCertification
-  Json request body
+<br>Json request body:
   ```
   {
   	"email":"Example@gmail.com",
@@ -67,7 +67,7 @@ App has 4 main routes endpoints
   ```
 
 - POST http://localhost:8081/students/certification/answer
-Json request body
+<br>Json request body:
 ```
   {
 	"email":"example@gmail.com",
